@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Runners</title>
+</head>
+<body>
+<h1>The Viking Runners</h1>
+    <script>
+
+    let numberOfRunnersForTeam1 = 5;
+    console.log(numberOfRunnersForTeam1);
+
+    let numberOfRunnersForTeam2 = 0;
+    console.log(numberOfRunnersForTeam2);
+    
+    let numberOfRunnersForTeam3 = undefined;
+    console.log(numberOfRunnersForTeam3);
+
+    let doesTeam1HaveRunners = Boolean(numberOfRunnersForTeam1);
+    console.log(doesTeam1HaveRunners);
+
+    let doesTeam2HaveRunners = Boolean(numberOfRunnersForTeam2);
+    console.log(doesTeam2HaveRunners);
+
+    let doesTeam3HaveRunners = Boolean(numberOfRunnersForTeam3);
+    console.log(doesTeam3HaveRunners);
+
+    let team1Name = "Team Warriors";
+    console.log(team1Name);
+
+    let team2Name = "";
+    console.log(team2Name);
+
+    let isTeam1NameValid = Boolean(team1Name);
+    console.log(isTeam1NameValid);
+
+    let isTeam2NameValid = Boolean(team2Name);
+    console.log(isTeam2NameValid);
+
+    let isTeamCheckedIn = false;
+    console.log(isTeamCheckedIn);
+
+    let shouldShowProgressBar = !isTeamCheckedIn;
+    console.log(shouldShowProgressBar);
+
+    let teamName = "Weekend Warriors";
+    console.log(teamName);
+
+    let teamHasPaid = true;
+    console.log(teamHasPaid);
+
+    let teamRunnerCount = 8;
+    console.log(teamRunnerCount);
+
+    isTeamCheckedIn = teamName && teamHasPaid && (teamRunnerCount > 0) && (teamRunnerCount <= 12);
+    console.log(isTeamCheckedIn);
+
+    let extraProductPackage = undefined;
+    console.log(extraProductPackage);
+
+    extraProductPackage = extraProductPackage || "None";
+    console.log(extraProductPackage);
+
+    let teamCount = 6;
+    console.log(teamCount);
+
+    let averageMileTimeInMinutes = 6.5;
+    console.log(averageMileTimeInMinutes);
+
+    let isTeamRunnerCountSufficient = (averageMileTimeInMinutes < 7 && teamCount >= 6) || (averageMileTimeInMinutes >= 7 &&
+    teamCount >= 12);
+    console.log(isTeamRunnerCountSufficient);
+
+    teamCount = 8;
+    console.log(teamCount);
+
+    averageMileTimeInMinutes = 10;
+    console.log(averageMileTimeInMinutes);
+
+    isTeamRunnerCountSufficient = (averageMileTimeInMinutes < 7 && teamCount >=6) 
+    console.log(isTeamRunnerCountSufficient);
+
+   teamCount = 10;
+   if(teamCount < 12){
+    console.log("Inform the team they are not a full team.");
+   }
+
+   let name = "";
+   if(!name){
+    console.log("Ask the team captain to update the runner's name");
+   }
+
+   let oldestAge = 17;
+   let teamDivision;
+   if(oldestAge < 18){
+    teamDivision = "junior";
+   }
+   console.log(teamDivision);
+
+   oldestAge = 17;
+   let youngestAge = 16;
+   teamDivision;
+
+   if(oldestAge < 18){
+    teamDivision = "junior";
+   } else if(youngestAge < 40){
+    teamDivision = "open";
+   }else{
+    teamDivision = "master";
+   }
+   console.log(teamDivision);
+
+   teamCount = 6;
+   averageMileTimeInMinutes = 6.5;
+   if(averageMileTimeInMinutes < 7 ){
+    if(teamCount < 6){
+        console.log("Inform the team that they are not a full team.");
+    }else{
+        console.log("This is a full team. Move onto the next step.");
+    }
+   }else{
+    if(teamCount < 12){
+        console.log("Inform the team that they are not a full team.");
+    }else{
+        console.log("This is a full team. Move onto the next step.");
+    }
+   }
+
+
+
+    
+
+
+    </script>
+    
+</body>
+</html>
